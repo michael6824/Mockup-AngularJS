@@ -1,0 +1,254 @@
+.navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+    background-color: #FFF2E0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    padding: 14px 6.7%;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #016E97;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    align-self: right;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #016E97;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #016E97;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+}
+
+.btn span.glyphicon {
+    opacity: 0;
+}
+
+.btn.active span.glyphicon {
+    opacity: 1;
+}
+
+h5 {
+    font-family: arial, sans-serif;
+    font-size: 25px;
+    color: grey;
+}
+
+h6 {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: grey;
+}
+
+h7 {
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+#th1,
+#td1 {
+    padding: 1em;
+    background: blue;
+    border-radius: 10% 0px 0px 10%;
+}
+
+#rcorners1 {
+    border-radius: 25px 0px 0px 25px;
+    background: white;
+    padding: 20px;
+    border-right: 0;
+    width: 200px;
+    height: 150px;
+}
+
+#Without {
+    padding: 1em;
+    background: white;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0px 0px 0px 0px;
+}
+
+#rcorners2 {
+    border-radius: 0px 25px 25px 0px;
+    background: white;
+    padding: 20px;
+    border-left: 0;
+    width: 200px;
+    height: 150px;
+}
+
+#dd-button {
+    display: inline-block;
+    padding: 10px 30px 10px 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#dd-button:after {
+    content: '';
+    position: absolute;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid orange;
+}
+
+.cell {
+    padding: 10px;
+    border: 1px solid #999;
+    vertical-align: middle;
+}
+
+.table {
+    display: table
+}
+
+.table .row {
+    display: table-row;
+}
+
+.table .cell {
+    display: table-cell;
+}

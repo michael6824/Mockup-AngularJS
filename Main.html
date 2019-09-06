@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html ng-app="AngularApp">
+
+<head>
+    <meta charset="utf 8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="Controller.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="MockupCss.css">
+    <title>Mockup</title>
+    <style>
+
+    </style>
+</head>
+
+<body ng-controller="ControllerApp" ng-app="Mockup" style="background: rgb(230,230,230)">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4" style="width:15%;">
+
+                <img src="https://comps.canstockphoto.es/azul-logotipo-onda-drag%C3%B3n-clipart-vectorial_csp39472705.jpg" style="width:80%;">
+                <br />
+
+            </div>
+            <div class="col-sm-8 col-md-8" style="width:85%;">
+
+                <div class="navbar">
+                    <!-- Navigation -->
+                    <a href="#home"><i class="fa fa-fw fa-home fa-2x"></i><br />Home</a>
+                    <a href="#news"><i class="fa fa-fw fa-envelope fa-2x"></i><br />Messages</a>
+                    <a href="#WishList"><i class="fa fa-fw fa-star fa-2x"></i><br />WishList</a>
+                    <a href="#Settings"><i class="fa fa-fw fa-cogs fa-2x"></i><br />Settings</a>
+                    <a href="#MyAccount"><i class="fa fa-fw fa-user fa-2x"></i><br />My Account</a>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-sm-4 col-lg-4" style="width:15%;">
+                <br/>
+                <i class="fa fa-fw fa-lightbulb-o fa-2x"></i><b> Smart Filters</b>
+                <hr style="border-top: 1px solid grey; ">
+                <img src="data:image/png;base64,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"
+                    width=25% height=15%>
+
+                <label class="switch">
+                    <input type="checkbox" checked ng-click="set_quantity()" ng-model="search.sales">
+                    <span class="slider round"></span>
+                </label>
+                <br />
+                <img src="https://image.flaticon.com/icons/svg/34/34389.svg" width=25% height=15%>
+
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <br />
+                <img src="data:image/png;base64,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"
+                    width=25% height=15%>
+
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+
+                <hr style="border-top: 1px solid grey; ">
+                <h6> Status</h6>
+                <br />
+                <div class="form-group input-group" style="align-items: center;justify-content: center;">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </span>
+                    <input type="text" class="form-control" ng-model="search.quantity" placeholder="Search">
+                </div>
+
+                <br />
+                <div style="align-items: center;justify-content: center;">
+                    <button type="button" ng-click="delete_tog()" class="btn btn-light" style="width: 100%;border-color:grey"><h7><b>DELIVERED</b></h7></button>
+                </div>
+
+            </div>
+
+            <div class="col-sm-8 col-lg-8" style="width:85%;">
+
+
+
+                <div class="table">
+                    <div class="row">
+                        <div class="cell" style="width:5%;border:0">
+                            <button id="toggleMessage" ng-click="change_tog()" style="background: rgb(230,230,230);border:0;">
+                                <i class="fa fa-check-circle-o fa-4x" aria-hidden="true" ng-show="togG" style="color: orange"></i>
+                                <i class="fa fa-circle-o fa-4x" aria-hidden="true" ng-show="!togG" style="color: orange"></i>
+                            </button>
+                        </div>
+                        <div class="cell" style="width:31%;border:0">
+                        </div>
+                        <div class="cell" style="width:32%;border:0">
+                        </div>
+                        <div class="cell" style="width:32%;border:0">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </span>
+                                <input type="text" class="form-control" ng-model="search.from" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" ng-repeat="movie in movies | filter:search">
+                        <div class="cell" style="width:5%;border:0">
+
+
+
+
+                            <button id="toggleMessage" ng-click="movie.tog=!movie.tog" style="background: rgb(230,230,230);border:0;">
+                                <i class="fa fa-check-circle-o fa-4x" aria-hidden="true" ng-show="movie.tog" style="color: orange"></i>
+                                <i class="fa fa-circle-o fa-4x" aria-hidden="true" ng-show="!movie.tog" style="color: orange"></i>
+                            </button>
+
+
+                        </div>
+                        <div class="cell" id="rcorners1">
+                            <h4>{{ movie.date | date : "EEEE" }} <br /> {{ movie.date | date : "d h:mm a" }} </h4>
+
+                        </div>
+
+                        <div class="cell" id="Without">
+                            <div class="row">
+                                <h4> {{ movie.from }} </h4>
+                            </div>
+                            <div class="row" style="text-align:center; vertical-align: middle;">
+                                <div id="dd-button">
+
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <h4> {{ movie.To }}</h4>
+                            </div>
+
+                        </div>
+                        <div class="cell" id="rcorners2">
+                            <div class="cell" style="border:0;">
+                                <a href="#Truck" style="color: grey"><i class="fa fa-fw fa-truck fa-4x"></i></a>
+                            </div>
+                            <div class="cell" style="border:0;">
+                                <h5>{{ "$"+(movie.price).toFixed(2) }}</h5>
+                            </div>
+                            <div class="cell" style="border:0;">
+                                <button type="button" class="btn btn-danger">{{ movie.quantity }}</button>
+
+                            </div>
+                            <div class="cell" style="border:0;">
+                                <button type="button" style="background: rgb(230,230,230);border:0"> 
+                                </div>
+                                <div class="cell" style="border:0;">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                    <path
+                                        d="M9 5.5c.83 0 1.5-.67 1.5-1.5S9.83 2.5 9 2.5 7.5 3.17 7.5 4 8.17 5.5 9 5.5zm0 2c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5S9.83 7.5 9 7.5zm0 5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+                <div class="cell" style="border: 0;float: right; text-align:right;"><i class="fa fa-plus-circle fa-4x" aria-hidden="true" style="color: orange"></i></div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+
+    </div>
+
+    </div>
+    </div>
+
+
+    </div>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+</body>
+
+</html>
